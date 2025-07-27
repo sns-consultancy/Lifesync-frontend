@@ -1,0 +1,251 @@
+.homepage-wrapper {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f9faff, #e4efff);
+  min-height: 100vh;
+  transition: background 0.4s ease;
+  max-width: 900px;
+  margin: auto;
+}
+
+.dark {
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  color: #f1f5f9;
+}
+
+.homepage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.homepage-header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #4F46E5;
+}
+
+.homepage-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.icon-button:hover {
+  background: #1d4ed8;
+}
+
+.logout-btn {
+  background: #dc2626;
+}
+
+.logout-btn:hover {
+  background: #b91c1c;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.app-button {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: none;
+  padding: 1.25rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.app-button:hover {
+  background: #bae6fd;
+  transform: translateY(-4px);
+}
+
+.dark .app-button {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.dark .app-button:hover {
+  background: #334155;
+}
+
+.homeActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.actionButton {
+  background: #4F46E5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.actionButton:hover {
+  background: #3730A3;
+}
+
+.homeFeatures {
+  background: #F1F5F9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.homeFeatures ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.homeFeatures li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.homeChat {
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .homepage-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .icon-button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--background);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.heading {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.appGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.appTile {
+  background-color: var(--tile-bg);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.appTile:hover {
+  transform: translateY(-4px);
+}
+
+.appImage {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.appName {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.features {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.featureIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.featureContent {
+  flex: 1;
+}
+
+.featureTitle {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background: #1e1e1e;
+  }
+  .appTile {
+    background-color: #2c2c2c;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .featureItem {
+    border-bottom: 1px solid #444;
+  }
+}
